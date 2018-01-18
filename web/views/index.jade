@@ -7,5 +7,9 @@ block content
             p(class="lead") Keep an eye on this space for new tools to help you run Magic events.
             p If you thought kefka.io (now, www.cfbe-ode.com) was great, just wait to see what's on the horizon
 
+            if (!user)
+                p You should probably #{''}
+                    a(href="/login") log in.
+
     script( src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" )
     script( src="/js/bootstrap.min.js" )
